@@ -1,0 +1,33 @@
+body{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(95, 107, 95);
+  font-family:'VCR OSD Mono', sans-serif;
+  overflow: hidden;
+}
+
+.container{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  text-align: center;
+}
+
+.header{
+  color: white;
+  margin-bottom: 0;
+}
+
+.btn{
+  border: 0;
+  border-radius: 5%;
+  background-color: rgba(0, 0, 0, 0.800);
+  -webkit-text-fill-color: white;
+  font-size: large;
+  font-family: 'VCR OSD Mono', sans-serif;
+}

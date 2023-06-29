@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main>
+      <div id="container" class="container">
+        <h1 class="header">Counter</h1>
+        <span id="value" class="value" style="font-size: 50px; margin-bottom: 200px;">0</span>
+        <div class="button-container">
+          <button class="btn decrease" onclick="play2()">decrease</button>
+          <button class="btn reset" onclick="play3()">reset</button>
+          <button class="btn increase" onclick="play1()">increase</button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="main.js"></script>
+    <script>
+      function play1() {
+        var audio = document.getElementById("increase");
+        audio.currentTime=0;
+        audio.play();
+      }
+      function play2() {
+        var audio = document.getElementById("decrease");
+        audio.currentTime=0;
+        audio.play();
+      }
+      function play3() {
+        var audio = document.getElementById("reset");
+        audio.currentTime=0;
+        audio.play();
+      }
+    </script>
+    <audio id="increase" src="audio/uk_parry.mp3"></audio>
+    <audio id="decrease" src="audio/uk_ahh.mp3"></audio>
+    <audio id="reset" src="audio/quick_fart.mp3"></audio>
+  </body>
+</html>
